@@ -1,0 +1,37 @@
+name: beans_workspace
+publish_to: none
+workspace:
+  - app
+
+environment:
+  sdk: ^3.10.0
+  flutter: ^3.38.0
+
+dependencies:
+  dio: ^5.9.0
+  freezed_annotation: ^3.1.0
+  http: ^1.6.0
+  hydrated_bloc: ^10.1.1
+  json_annotation: ^4.9.0
+  pretty_dio_logger: ^1.4.0
+  sentry_flutter: ^9.8.0
+  stellar_flutter_sdk: ^2.2.0
+
+dev_dependencies:
+  analyzer: ^8.4.0
+  build_runner: ^2.10.4
+  flutter_lints: ^6.0.0
+  freezed: ^3.2.3
+  intl: ^0.20.2
+  json_serializable: ^6.11.2
+  melos: 7.3.0
+  test: ^1.26.3
+
+dependency_overrides:
+  stellar_flutter_sdk:
+    git:
+      url: https://github.com/Beans-BV/stellar_flutter_sdk.git
+      ref: master-beans
+
+melos:
+  sdkPath: .fvm/versions/3.38.3
